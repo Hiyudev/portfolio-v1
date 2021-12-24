@@ -4,6 +4,7 @@ import { FooterWrapper } from './styles';
 function Footer() {
 	return (
 		<FooterWrapper>
+			Created & designed by
 			<a href="/">
 				<LogoFullIcon />
 			</a>
