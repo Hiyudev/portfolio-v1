@@ -3,5 +3,7 @@ export default interface IProject {
 	description: string
 	tags: string[]
 	thumbnail: string
-	link: string
+	github: string,
+	website: string,
+	client: boolean
 }

@@ -18,11 +18,11 @@ export const getProjects = async (): Promise<IProject[]> => {
 		},
 	});
 
-	let projects = db.results.map(project => {
-		const { Tags, Description, Name, Github } = project.properties;
+	let projects = db.results.map((project: { properties: { Tags: any; Description: any; Name: any; Github: any; Link: any; Client: any; }; cover: { file?: any; external?: any; type?: any; }; }) => {
+		const { Tags, Description, Name, Github, Link, Client } = project.properties;
 		const { type } = project.cover;
 
-		const tagnames = Tags.multi_select.map(tag => tag.name);
+		const tagnames = Tags.multi_select.map((tag: { name: any; }) => tag.name);
 
 		let url = '';
 		if (type === 'file') {
@@ -36,7 +36,9 @@ export const getProjects = async (): Promise<IProject[]> => {
 			description: Description.rich_text[0].plain_text,
 			tags: tagnames,
 			thumbnail: url,
-			link: Github.rich_text[0].plain_text,
+			github: Github.rich_text[0]?.plain_text ?? "",
+			website: Link.rich_text[0]?.plain_text ?? "",
+			client: Client.checkbox
 		};
 	});
 

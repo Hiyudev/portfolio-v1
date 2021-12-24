@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import LinkIcon from 'src/assets/icons/Link';
 import GithubIcon from '../../assets/icons/Github';
 import {
 	ProjectWrapper,
@@ -12,8 +13,10 @@ interface IProject {
 	thumbnail: string;
 	description: string;
 	tags: string[];
-	link: string;
+	website: string;
+	github: string;
 	reverse?: boolean;
+	isClient: boolean;
 }
 
 function Project({
@@ -21,7 +24,9 @@ function Project({
 	thumbnail,
 	description,
 	tags,
-	link,
+	website,
+	github,
+	isClient,
 	reverse,
 }: IProject) {
 	return (
@@ -37,7 +42,10 @@ function Project({
 			</ProjectPreview>
 
 			<ProjectCard>
-				<h2>{title}</h2>
+				<div>
+					<h2>{title}</h2>
+					{isClient && <small>Client project</small>}
+				</div>
 
 				<p>{description}</p>
 
@@ -48,9 +56,16 @@ function Project({
 				</ul>
 
 				<ProjectFooter>
-					<a target="_blank" href={link}>
-						<GithubIcon />
-					</a>
+					{github && (
+						<a target="_blank" href={github}>
+							<GithubIcon />
+						</a>
+					)}
+					{website && (
+						<a target="_blank" href={website}>
+							<LinkIcon />
+						</a>
+					)}
 				</ProjectFooter>
 			</ProjectCard>
 		</ProjectWrapper>

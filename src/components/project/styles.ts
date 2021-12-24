@@ -1,7 +1,12 @@
 import device from 'src/styles/device';
 import styled from 'styled-components';
 export const ProjectPreview = styled.div`
-  img {
+	& > span {
+		border-radius: 1rem;
+		box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+	}
+
+	img {
 		background-color: ${({ theme }) => theme.colors.primary};
     border-radius: 1rem;
     max-width: 450px;
@@ -19,6 +24,7 @@ export const ProjectCard = styled.div`
   background-color: ${({ theme }) => theme.main.dark};
   border-radius: 1rem;
   gap: 1.5rem;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
 	@media ${device.max.mobile} {
 		margin-top: -2rem;
@@ -49,14 +55,16 @@ export const ProjectCard = styled.div`
 
 export const ProjectFooter = styled.div`
   display: flex;
-  flex-direction: column;
+	gap: 1rem;
+	flex-direction: row;
   align-items: center;
 
 	a {
 		align-self: flex-start;
 
 		svg {
-			width: 24px;
+			width: 20px;
+			height: 20px;
 		}
 	}
 `;

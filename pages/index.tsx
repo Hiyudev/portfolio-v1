@@ -68,7 +68,9 @@ export default function HomePage({ projects, about }: IHomePage) {
 						thumbnail={v.thumbnail}
 						description={v.description}
 						tags={v.tags}
-						link={v.link}
+						website={v.website}
+						github={v.github}
+						isClient={v.client}
 					/>
 				))}
 			</Section>
