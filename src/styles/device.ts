@@ -40,5 +40,5 @@ const max = {
 	bdesktop: `(max-width: ${size.xxl})`,
 };
 
-const obj = { min, max };
-export default obj;
+const device = { min, max };
+export default device;

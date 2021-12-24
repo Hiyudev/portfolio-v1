@@ -15,6 +15,11 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Open Sans', sans-serif;
     -webkit-font-smoothing: antialiased !important;
 
+		background-color: ${({ theme }) => theme.main.default};
+		color: ${({ theme }) => theme.colors.text};
+
+		transition: background-color .3s, color .3s, -webkit-text-stroke .3s;
+
 		&::-webkit-scrollbar-track
     {
       border: 1px solid ${({ theme }) => theme.main.dark};
@@ -49,6 +54,17 @@ const GlobalStyle = createGlobalStyle`
     font: inherit;
     cursor: pointer;
   }
+
+	a {
+		text-decoration: none;
+		transition: color .3s;
+
+		color: ${({ theme }) => theme.colors.text};
+
+		:hover {
+			color: ${({ theme }) => theme.colors.primary};
+		}
+	}
 `;
 
 export default GlobalStyle;
