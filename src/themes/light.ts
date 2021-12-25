@@ -8,7 +8,7 @@ const light: DefaultTheme = {
 	colors: {
 		gray: '#6D6D6D',
 		text: '#000',
-		primary: '#7141D7',
+		primary: '#4749EB',
 		primaryContrast: '#fff'
 	},
 };
