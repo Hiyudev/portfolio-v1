@@ -20,6 +20,7 @@ import MailIcon from 'src/assets/icons/Mail';
 import IconButton from '@components/Iconbutton';
 import ClipboardIcon from 'src/assets/icons/Clipboard';
 import { useTheme } from 'src/hooks/useTheme';
+import GithubIcon from 'src/assets/icons/Github';
 
 const Home = styled.main`
 	padding-left: 8rem;
@@ -148,6 +149,22 @@ export default function HomePage({ projects, about }: IHomePage) {
 									onClick={() => {
 										notify();
 										navigator.clipboard.writeText('yuki2dev@protonmail.com');
+									}}
+								/>
+							</ContactInfo>
+						</div>
+					</Contact>
+					<Contact color="#797979">
+						<GithubIcon />
+						<div>
+							<h2>Github</h2>
+							<ContactInfo>
+								<small>KeysHD</small>
+								<IconButton
+									icon={<ClipboardIcon />}
+									onClick={() => {
+										notify();
+										navigator.clipboard.writeText('KeysHD');
 									}}
 								/>
 							</ContactInfo>
