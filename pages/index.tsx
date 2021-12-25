@@ -178,7 +178,7 @@ export default function HomePage({ projects, about }: IHomePage) {
 	);
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
 	const projects = await getProjects();
 	const about = await getAbout();
 
