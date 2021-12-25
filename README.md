@@ -33,7 +33,7 @@
 1. First, clone this repository
 
 ```bash
-git clone https://github.com/KeysHD/rodizio2o.git
+git clone https://github.com/KeysHD/portfolio.git
 ```
 
 2. Install all the dependencies
