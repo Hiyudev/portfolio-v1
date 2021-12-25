@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import { ToastContainer, toast } from 'react-toastify';
+
 import { getAbout, getProjects } from '../src/lib/notion';
 import HeroPage from '../src/layouts/hero';
 import Navbar from '../src/layouts/navbar';
@@ -11,6 +13,13 @@ import List from '@components/list';
 import Section from '@components/section';
 import IconLabel from '@components/iconlabel';
 import Footer from 'src/layouts/footer';
+import { Contact, ContactInfo, ContactList } from '@components/contact';
+import TwitterIcon from 'src/assets/icons/Twitter';
+import DiscordIcon from 'src/assets/icons/Discord';
+import MailIcon from 'src/assets/icons/Mail';
+import IconButton from '@components/Iconbutton';
+import ClipboardIcon from 'src/assets/icons/Clipboard';
+import { useTheme } from 'src/hooks/useTheme';
 
 const Home = styled.main`
 	padding-left: 8rem;
@@ -38,8 +47,26 @@ interface IHomePage {
 }
 
 export default function HomePage({ projects, about }: IHomePage) {
+	const { theme } = useTheme();
+	const notify = () =>
+		toast.success('Copied on clipboard !', {
+			theme: theme === 'dark' ? 'dark' : 'light',
+		});
+
 	return (
 		<Home>
+			<ToastContainer
+				position="bottom-center"
+				autoClose={2000}
+				hideProgressBar
+				newestOnTop={false}
+				closeOnClick
+				rtl={false}
+				pauseOnFocusLoss={false}
+				draggable
+				pauseOnHover={false}
+			/>
+
 			<Navbar />
 
 			<HeroPage />
@@ -73,6 +100,60 @@ export default function HomePage({ projects, about }: IHomePage) {
 						isClient={v.client}
 					/>
 				))}
+			</Section>
+
+			<Section tagname="contact-me">
+				<ContactList>
+					<Contact color="#1DA1F2">
+						<TwitterIcon />
+						<div>
+							<h2>Twitter</h2>
+
+							<ContactInfo>
+								<small>@Yuki2dev</small>
+								<IconButton
+									icon={<ClipboardIcon />}
+									onClick={() => {
+										notify();
+										navigator.clipboard.writeText('@Yuki2dev');
+									}}
+								/>
+							</ContactInfo>
+						</div>
+					</Contact>
+					<Contact color="#5865F2">
+						<DiscordIcon />
+						<div>
+							<h2>Discord</h2>
+							<ContactInfo>
+								<small>Yuki2dev#6914</small>
+								<IconButton
+									icon={<ClipboardIcon />}
+									onClick={() => {
+										notify();
+										navigator.clipboard.writeText('Yuki2dev#6914');
+									}}
+								/>
+							</ContactInfo>
+						</div>
+					</Contact>
+					<Contact color="#8B89CC">
+						<MailIcon />
+						<div>
+							<h2>E-Mail</h2>
+							<ContactInfo>
+								<small>yuki2dev@protonmail.com</small>
+								<IconButton
+									icon={<ClipboardIcon />}
+									onClick={() => {
+										notify();
+										navigator.clipboard.writeText('yuki2dev@protonmail.com');
+									}}
+								/>
+							</ContactInfo>
+						</div>
+					</Contact>
+				</ContactList>
 			</Section>
 
 			<Footer />
