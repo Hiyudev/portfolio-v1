@@ -1,7 +1,8 @@
 import device from 'src/styles/device';
 import styled from 'styled-components';
+
 export const ProjectPreview = styled.div`
-	& > span {
+	span {
 		border-radius: 1rem;
 		box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 	}
@@ -12,6 +13,14 @@ export const ProjectPreview = styled.div`
     max-width: 450px;
     max-height: 300px;
     width: 100%;
+		opacity: 0.8;
+
+		transition: opacity .3s, transform .3s;
+
+		:hover {
+			transform: scale(1.1);
+			opacity: 1;
+		}
   }
 `;
 

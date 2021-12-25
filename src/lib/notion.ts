@@ -49,5 +49,6 @@ export const getAbout = async (): Promise<string> => {
 	const res = await notionClient.blocks.retrieve({
 		block_id: process.env.NOTION_ABOUT_TOKEN,
 	});
+
 	return res.paragraph.text[0].plain_text;
 };

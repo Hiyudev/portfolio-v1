@@ -16,7 +16,6 @@ const SwitchButton = styled.input`
   border-radius: 1rem;
   display: inline-block;
   position: relative;
-  border: 2px solid #474755;
   background: linear-gradient(180deg, #2d2f39 0%, #1f2027 100%);
   transition: all 0.2s ease;
 
@@ -33,7 +32,7 @@ const SwitchButton = styled.input`
     transition: all 0.2s cubic-bezier(0.5, 0.1, 0.75, 1.35);
   }
   :checked {
-    border-color: #654fec;
+    border-color: ${({ theme }) => theme.colors.primary};
 
     :after {
       transform: translatex(20px);
