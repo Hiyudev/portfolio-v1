@@ -6,7 +6,7 @@ export const ContactList = styled.div`
 	justify-content: space-around;
 	gap: 2rem;
 
-	@media ${device.max.mobile} {
+	@media ${device.max.tablet} {
 		flex-direction: column;
 	}
 `;
