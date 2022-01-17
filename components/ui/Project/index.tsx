@@ -1,4 +1,4 @@
-import s from './Project.module.css';
+import s from './project.module.css';
 import LinkIcon from '../../icons/Link';
 import GithubIcon from '../../icons/Github';
 
