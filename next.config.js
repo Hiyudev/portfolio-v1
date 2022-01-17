@@ -1,10 +1,9 @@
-const { i18n } = require('./next-i18next.config')
+const { i18n } = require('./next-i18next.config');
+const path = require('path');
 
 module.exports = {
   i18n,
-  images: {
-    domains: ['via.placeholder.com'],
-  },
+  localePath: path.resolve('./locales'),
   async redirects() {
     return [
       {
