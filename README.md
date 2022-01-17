@@ -43,10 +43,23 @@ git clone https://github.com/KeysHD/portfolio.git
 yarn install
 ```
 
-3. Run the project
+3. Create a `.env.local` file and put two important variables:
+
+- `NOTION_TOKEN`: Notion integration token
+- `NOTION_DB_TOKEN`: Notion Database ID with a page list having there properties:
+  - Tags: Multi-select option for technologies names
+  - en_Description: Project description in english
+  - pt_Description: Project description in portuguese
+  - Status: Select option for display or not
+  - Github: Github repo link
+  - Link: Demo link
+  - Client: Checkbox if the project its a client project
+  - Feature: Checkbox if appear as a fetured project
+
+4. Run the project
 
 ```bash
 yarn dev
 ```
 
-4. Navigate to `https://localhost:3000`
+5. Navigate to `https://localhost:3000`
