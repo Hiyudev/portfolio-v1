@@ -1,0 +1,1 @@
+- Webpack to remove the unused icon code

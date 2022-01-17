@@ -1,0 +1,27 @@
+.techstack_list {
+  @apply inline-block ml-0;
+}
+
+.techstack_wrapper {
+  @apply inline-block;
+}
+
+.icon {
+  @apply bg-transparent text-black transition-all ease-in-out scale-75 hover:scale-100 hover:bg-purple-700 rounded-xl;
+}
+
+:global(.dark) .icon {
+  @apply text-white hover:bg-purple-500;
+}
+
+.techsection {
+  @apply relative max-w-full overflow-hidden before:absolute before:z-10 before:left-0 before:top-0 before:w-24 before:h-full before:bg-gradient-to-r before:from-gray-100 before:to-transparent after:absolute after:z-10 after:-right-[1px] after:top-0 after:w-24 after:h-full after:bg-gradient-to-l after:from-gray-100 after:to-transparent;
+}
+
+:global(.dark) .techsection {
+  @apply before:from-gray-900 after:from-gray-900;
+}
+
+.marquee {
+  @apply inline-block whitespace-nowrap animate-marquee;
+}

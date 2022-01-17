@@ -1,0 +1,43 @@
+.navbar {
+  @apply flex items-center h-16;
+}
+
+.logo {
+  @apply flex-shrink flex justify-center items-center p-2 w-16;
+}
+
+.icon {
+  @apply w-6;
+}
+
+.navlist {
+  @apply flex justify-end items-center flex-grow w-full h-full;
+}
+
+.link_list {
+  @apply hidden sm:flex items-center space-x-8;
+}
+
+.link {
+  @apply uppercase font-black transition-all hover:border-b-2 hover:-mb-[2px] border-purple-600;
+}
+
+.sidelist {
+  @apply sm:hidden fixed top-0 right-0 p-4 w-40 h-full bg-gray-200 z-50 flex-col;
+}
+
+:global(.dark) .sidelist {
+  @apply bg-gray-800;
+}
+
+.sidelist_header {
+  @apply flex flex-row justify-end h-8;
+}
+
+.sidelist_button {
+  @apply flex justify-center items-center w-8;
+}
+
+.sidelist_body {
+  @apply ml-0 mt-4 flex flex-col items-center space-y-8;
+}

@@ -1,0 +1,31 @@
+.section {
+  @apply flex flex-col h-screen relative;
+}
+
+.hero {
+  @apply flex flex-col mt-16 space-y-8 lg:space-y-0 lg:flex-row lg:space-x-8;
+}
+
+.iconlist {
+  @apply w-full flex flex-row justify-center lg:justify-end space-x-4 lg:space-x-0 text-black;
+}
+
+.icon {
+  @apply bg-gray-200 text-purple-700;
+}
+
+:global(.dark) .icon {
+  @apply bg-gray-800 text-purple-500;
+}
+
+.arrowbutton {
+  @apply absolute left-1/2 -translate-x-1/2 bottom-16;
+}
+
+.arrow {
+  @apply animate-bounce flex justify-center items-center w-10 h-10 bg-gray-900 rounded-full text-white;
+}
+
+:global(.dark) .arrow {
+  @apply bg-gray-100 text-black;
+}

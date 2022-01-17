@@ -1,0 +1,21 @@
+{
+  "projectTitle": "Projetos",
+  "aboutTitle": "Sobre mim",
+  "aboutDescription": "Meu nome é Yuki, um desenvolvedor autodidata apaixonado pelo mundo da tecnologia. Entrou neste mundo começando com bots no Discord usando a biblioteca Discord.JS junto com Javascript + Node.js. Atualmente, trabalho com uma grande quantidade de tecnologias e ferramentas modernas que variam de webscrap ou tarefas automatizadas a um site completo ou bot customizado no Discord.",
+  "serviceTitle": "O que ofereço",
+  "contactTitle": "Quer discutir sobre a tua ideia?",
+  "heroTitle": "Olá sou",
+  "heroDescription": "Programador full-stack autodidata. Eu crio e faço o design de programas para fazer a sua ideia em um produto online real.",
+  "alertTitle": "Nota",
+  "alertDescription": "Não ofereço nenhum serviço de domínio ou hospedagem para os sites e bots de Discord que crio. Vou recomendar os melhores serviços gratuitos ou pagos e ensinar como fazê-los funcionar.",
+  "serviceDescription": "E muito mais...",
+  "websiteDescription": "Websites bonitos e responsivos com:",
+  "websiteDesign": "Design limpo",
+  "websiteSEO": "Otimização SEO",
+  "discordDescription": "Bots do discord otimizados com:",
+  "discordCustom": "Fácil customização",
+  "discordCommands": "Comandos customizados",
+  "discordReaction": "Reaction / Button roles",
+  "designDescription": "Web designs estéticos feitos com a ferramenta mais popular: Figma",
+  "designList": "Banners ou ícones esplêndidos para:"
+}

@@ -1,0 +1,39 @@
+.project {
+  @apply bg-gray-100 border-2 border-gray-400;
+}
+
+:global(.dark) .project {
+  @apply bg-gray-900 border-gray-700;
+}
+
+.link {
+  @apply transition-colors hover:text-purple-700 w-6 h-6;
+}
+
+:global(.dark) .link {
+  @apply hover:text-purple-500;
+}
+
+:global(.dark) .link {
+  @apply hover:text-purple-500;
+}
+
+.tags {
+  @apply list-none ml-0 flex flex-row flex-wrap gap-4 gap-y-2 text-gray-500;
+}
+
+:global(.dark) .tags {
+  @apply text-gray-400;
+}
+
+.links {
+  @apply !ml-0 flex flex-row space-x-4;
+}
+
+.project_footer {
+  @apply flex flex-col justify-between;
+}
+
+.image {
+  @apply w-full h-full transition-all ease-in-out object-cover opacity-75 hover:opacity-100 hover:scale-110;
+}

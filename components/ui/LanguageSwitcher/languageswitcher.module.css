@@ -1,0 +1,19 @@
+.button {
+  @apply inline-block relative;
+}
+
+.list {
+  @apply list-none ml-0 absolute -right-10 sm:-right-3 pt-1 text-gray-800 transition-transform origin-top transform-gpu scale-y-0 focus-within:scale-y-100 z-20;
+}
+
+:global(.dark) .list {
+  @apply text-gray-200;
+}
+
+.item {
+  @apply block w-32 px-4 py-2 bg-gray-200;
+}
+
+:global(.dark) .item {
+  @apply bg-gray-800;
+}

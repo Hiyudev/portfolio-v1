@@ -1,0 +1,19 @@
+.body {
+  @apply relative p-6 rounded-xl overflow-hidden bg-gray-100 border-2 border-gray-400;
+}
+
+:global(.dark) .body {
+  @apply bg-gray-900 border-gray-700;
+}
+
+.decoration {
+  @apply absolute -right-8 top-0 transition-all w-32 h-32;
+}
+
+.image {
+  @apply text-gray-500 opacity-75 transition-all skew-x-12;
+}
+
+:global(.dark) .image {
+  @apply text-gray-400;
+}
