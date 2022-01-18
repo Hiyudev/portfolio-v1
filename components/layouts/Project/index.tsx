@@ -4,6 +4,7 @@ import IProject from '@interfaces';
 import { Project, FolderProject } from '@ui/Project';
 
 import s from './project.module.css';
+import Slide from 'components/animations/Slide';
 
 interface IProjectSection {
   list: IProject[];
@@ -19,18 +20,20 @@ function ProjectSection({ list }: IProjectSection) {
       <ul className={s.featured_list}>
         {featuredProjects.map((v, i) => {
           return (
-            <Project
-              key={i}
-              title={v.title}
-              description={
-                locale === 'en' ? v.en_Description : v.pt_Description
-              }
-              tags={v.tags}
-              invert={i % 2 == 0}
-              thumbnail={v.thumbnail}
-              githublink={v.github}
-              demolink={v.website}
-            />
+            <Slide direction="x" reverse={i % 2 == 0}>
+              <Project
+                key={i}
+                title={v.title}
+                description={
+                  locale === 'en' ? v.en_Description : v.pt_Description
+                }
+                tags={v.tags}
+                invert={i % 2 == 0}
+                thumbnail={v.thumbnail}
+                githublink={v.github}
+                demolink={v.website}
+              />
+            </Slide>
           );
         })}
       </ul>
@@ -38,16 +41,18 @@ function ProjectSection({ list }: IProjectSection) {
       <div className={s.project_list}>
         {projects.map((v, i) => {
           return (
-            <FolderProject
-              key={i}
-              title={v.title}
-              description={
-                locale === 'en' ? v.en_Description : v.pt_Description
-              }
-              tags={v.tags}
-              githublink={v.github}
-              demolink={v.website}
-            />
+            <Slide direction="y">
+              <FolderProject
+                key={i}
+                title={v.title}
+                description={
+                  locale === 'en' ? v.en_Description : v.pt_Description
+                }
+                tags={v.tags}
+                githublink={v.github}
+                demolink={v.website}
+              />
+            </Slide>
           );
         })}
 
