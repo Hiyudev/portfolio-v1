@@ -9,7 +9,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
     <ThemeProvider enableSystem attribute="class">
       <Head>
-        <title>Yuki&apos;s portfolio</title>
+        <title>Yuki | Self-taught developer</title>
         <meta name="title" content="Yuki's portfolio" />
         <meta
           name="description"

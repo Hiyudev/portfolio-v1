@@ -36,7 +36,8 @@
     @apply text-xl sm:text-2xl md:text-3xl;
   }
 
-  p {
+  p,
+  li {
     @apply text-sm sm:text-base md:text-lg;
   }
 
