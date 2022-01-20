@@ -3,7 +3,11 @@
 </p>
 
 <p align="center">
-	<img alt="Vercel deploy" src="https://img.shields.io/github/deployments/KeysHD/portfolio/production?label=vercel&logo=vercel&style=for-the-badge">
+	<img alt="Vercel deploy" src="https://img.shields.io/github/deployments/KeysHD/portfolio/production?label=website&logo=vercel&style=for-the-badge">
+  
+  <a href="https://portfolio-yuki2dev.vercel.app/">
+    <img alt="Website" src="https://img.shields.io/static/v1?message=visit%20now&color=1d4ed8&label=website&labelColor=121212&logo=vercel&style=for-the-badge"/>
+  </a>
 </p>
 
 <p align="center">
@@ -15,8 +19,7 @@
 
 <p align="center">
  <a href="#technology">Technology</a> •
- <a href="#installation">Installation</a> •
-	<a href="https://portfolio-yuki2dev.vercel.app/">Visit the website</a>
+ <a href="#installation">Installation</a>
 </p>
 
 ## Technology
