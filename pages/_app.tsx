@@ -9,11 +9,11 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
     <ThemeProvider enableSystem attribute="class">
       <Head>
-        <title>Yuki | Self-taught developer</title>
+        <title>Yuki | Full-stack developer</title>
         <meta name="title" content="Yuki's portfolio" />
         <meta
           name="description"
-          content="I'm Yuki, a self-taught developer passionate about the technology world"
+          content="I'm Yuki, a full-stack developer passionate about the technology world"
         />
         <meta
           name="keywords"
@@ -31,7 +31,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
         <meta property="og:title" content="Yuki's portfolio" />
         <meta
           property="og:description"
-          content="Hi ! I'm Yuki, a self-taught developer passionate about the technology world"
+          content="Hi ! I'm Yuki, a full-stack developer passionate about the technology world"
         />
         <meta
           property="og:image"
@@ -46,7 +46,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
         <meta property="twitter:title" content="Yuki's portfolio" />
         <meta
           property="twitter:description"
-          content="Hi ! I'm Yuki, a self-taught developer passionate about the technology world"
+          content="Hi ! I'm Yuki, a full-stack developer passionate about the technology world"
         />
         <meta
           property="twitter:image"

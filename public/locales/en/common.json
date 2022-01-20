@@ -1,11 +1,11 @@
 {
   "projectTitle": "Projects",
   "aboutTitle": "About me",
-  "aboutDescription": "My name is Yuki, a self-taught developer passionate about the technology world. Entered this world starting with discord bots using Discord.JS library along Javascript + Node.js. Fast forward, now I work with a vast amount of modern technologies and tools that range from webscrap or automated tasks to a full website or custom discord bot.",
+  "aboutDescription": "My name is Yuki, a full-stack developer passionate about the technology world. Entered this world starting with discord bots using Discord.JS library along Javascript + Node.js. Fast forward, now I work with a vast amount of modern technologies like React.JS, Next.JS, Typescript and Tailwind.CSS, making tools that range from webscrap or automated tasks to a full website or custom discord bot.",
   "serviceTitle": "What i offer",
   "contactTitle": "Want to discuss a new project?",
   "heroTitle": "Hi i'm",
-  "heroDescription": "Self-taught full-stack developer. I create and design programs to turn your idea into a real online product.",
+  "heroDescription": "Full-stack developer. I create and design programs to make your idea come true.",
   "alertTitle": "Note",
   "alertDescription": "I do not offer any domain or hosting services for the websites and discord bots I create. I will recommend the best free or paid services and teach you how to make them work.",
   "serviceDescription": "And much more...",
